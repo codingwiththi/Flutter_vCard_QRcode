@@ -43,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
     vCard.lastName = 'Ribeiro';
     vCard.organization = 'Nexa Tecnologia e Outsourcing';
     //vCard.photo.attachFromUrl('/path/to/image/file.png', 'PNG');
-    vCard.workPhone = '27997852623';
+    vCard.workPhone = '27999999999';
     vCard.birthday = DateTime.utc(1995, 11, 1);
     vCard.title = 'Estagiário';
     vCard.url = 'https://github.com/thiagomr8';
