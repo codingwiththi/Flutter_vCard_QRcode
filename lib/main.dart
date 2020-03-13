@@ -12,7 +12,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(title: 'vCard QR Code'),
@@ -22,8 +21,6 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
-
-
 
   final String title;
 
@@ -37,6 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     // TODO: implement initState
     super.initState();
+
     ///Set properties
     vCard.firstName = 'Thiago';
     vCard.middleName = 'Moreira';
@@ -67,11 +65,11 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(vCard.getFormattedString()),
+            //Text(vCard.getFormattedString()),
             QrImage(
               data: vCard.getFormattedString(),
               version: QrVersions.auto,
-              size: 200.0,
+              size: 250,
             ),
           ],
         ),
